@@ -1,20 +1,11 @@
-.row{   
+.links {
     display:flex;
-    background-color:black;
-    color:white;
-    font-size:20px;
+    justify-content:center;
 }
-img{
-    width:20px;
+.social {
+    width: 30px;
+    margin: 10px;
 }
-.mid{
-    background-color:white;
-    color:black;
-    align-items:center;
-    font-size:50px;
-    margin-top:5px;
-    margin-bottom:5px;
-}
-.aboutme{
-    border:1px solid black;   
+h1 {
+    text-align: center;
 }
