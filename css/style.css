@@ -1,3 +1,7 @@
+body {
+    background-color: #B9E200;
+}
+
 .links {
     display:flex;
     justify-content:center;
