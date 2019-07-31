@@ -1,8 +1,7 @@
 body {
-    background-color: #B9E200;
+    font-family: 'Noto Sans', sans-serif;
 }
-
-.links {
+.links, .header {
     display:flex;
     justify-content:center;
 }
@@ -10,6 +9,19 @@ body {
     width: 30px;
     margin: 10px;
 }
+#emily {
+    width: 25%;
+}
 h1 {
+    text-align: center;
+}
+.column {
+    display:flex;
+    justify-content:space-around;
+}
+.reads .likes {
+    width: 50%;
+}
+h2 {
     text-align: center;
 }
