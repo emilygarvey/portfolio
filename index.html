@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Emily Garvey</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     </head>
@@ -18,20 +19,109 @@
         <div class="column">
             <div class="likes">
                 <h2>What I'm &#x1F60D Right Now</h2>
-                <ul>
-                    <li>Ample Hill's <a href="https://www.amplehills.com/merchandise/tour-de-hills-passport" target="_blank">Tour de Hills</a></li>
-                    <li>Panda <a href="https://pandaplanner.com/" target="_blank">Planner</a></li>
-                    <li><a href="https://seated.app.link/2AqN6svqfY" target="_blank">Seated</a> app</li>
-                    <li>The Pattern app</li>
-                </ul>
+                <div class="accordian" id="like">
+                    <div class="card">
+                        <div class="card-header" id="likeHeadOne">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#likeOne" aria-expanded="false" aria-controls="likeOne">
+                                + Ample Hills Tour de Hills
+                            </button>
+                        </div>
+                        <div id="likeOne" class="collapse" aria-labelledby="likeHeadOne" data-parent="#like">
+                            <div class="card-body">
+                                <p>Travel around Brooklyn, Manhattan, Queens, and Jersey City to eat <a href="https://www.amplehills.com/merchandise/tour-de-hills-passport">10 scoops of ice cream</a> in one day to call yourself a Hillionaire Extraordinaire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="likeHeadTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#likeTwo" aria-expanded="false" aria-controls="likeTwo">
+                                + Panda Planner
+                            </button>
+                        </div>
+                        <div id="likeTwo" class="collapse" aria-labelledby="likeHeadTwo" data-parent="#like">
+                            <div class="card-body">
+                                <p>Like a Passion Planner, but more condensed. Panda Planner has a two-page daily spread that <a href="https://pandaplanner.com/">helps me get my life together</a>, along with weekly and monthly sections so I can plan ahead.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="likeHeadThree">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#likeThree" aria-expanded="false" aria-controls="likeThree">
+                                + Seated App
+                            </button>
+                        </div>
+                        <div id="likeThree" class="collapse" aria-labelledby="likeHeadThree" data-parent="#like">
+                            <div class="card-body">
+                                <p>This is possibly the best app I've ever found. <a href="https://seated.app.link/2AqN6svqfY">Book your reservation through the app</a>, eat, and then upload a picture of your receipt to receive Amazon giftcard credit for a certain percent of your dinner. I've gotten up to 40% at places... it's way too good to be true. (Until it goes the way of MoviePass, use my referral code <strong>EMILY2131</strong> and we both get an extra perk)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="likeHeadFour">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#likeFour" aria-expanded="false" aria-controls="likeFour">
+                                + The Pattern App
+                            </button>
+                        </div>
+                        <div id="likeFour" class="collapse" aria-labelledby="likeHeadFour" data-parent="#like">
+                            <div class="card-body">
+                                <p>How does this <a href="https://apps.apple.com/us/app/the-pattern/id1071085727">horoscope app</a> know me so well? I DON'T KNOW. Add your friends to get insights into their life too.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="reads">
                 <h2>What I'm &#x1F4D6 Right Now</h2>
-                <ul>
-                    <li>Team Human by Douglas Rushkoff</li>
-                    <li>Colson <a href="https://time.com/5615610/colson-whitehead-the-nickel-boys-interview/" target="_blank">Whitehead</a></li>
-                    <li><a href="https://www.rallycoding.com/" target="_blank">Stephen Grider</a>'s Modern React course on Udemy</li>
-                </ul>
+                <div class="accordian" id="read">
+                    <div class="card">
+                        <div class="card-header" id="readHeadOne">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#readOne" aria-expanded="false" aria-controls="readOne">
+                                + Author Colson Whitehead
+                            </button>
+                        </div>
+                        <div id="readOne" class="collapse" aria-labelledby="readHeadOne" data-parent="#read">
+                            <div class="card-body">
+                                <p>Barack Obama put The Nickel Boys on his reading list this summer, but <a href="https://time.com/5615610/colson-whitehead-the-nickel-boys-interview/">every single book of Whitehead</a>'s that I've read is great. I recommend the going back to his first novel, The Intuitionist, for a bizarre commentary on elevator inspections and race.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="readHeadTwo">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#readTwo" aria-expanded="false" aria-controls="readTwo">
+                                + Budget Bytes website
+                            </button>
+                        </div>
+                        <div id="readTwo" class="collapse" aria-labelledby="readHeadTwo" data-parent="#read">
+                            <div class="card-body">
+                                <p>This website was recommended to me by my sister when I told her I had to start mealprepping. It dates back to 2009 so I'm sure I'll have <a href="https://www.budgetbytes.com/">plenty of recipes</a> to choose from.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="readHeadThree">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#readThree" aria-expanded="false" aria-controls="readThree">
+                                + What's the difference? newsletter
+                            </button>
+                        </div>
+                        <div id="readThree" class="collapse" aria-labelledby="readHeadThree" data-parent="#read">
+                            <div class="card-body">
+                                <p>I pride myself on unsubscribing to every newsletter ever, but I love this weekly read that <a href="https://www.whatsthediff.org/">explains the difference</a> between two or more similar and often confused terms. Sunblock or sunscreen? Great question.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="readHeadFour">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#readFour" aria-expanded="false" aria-controls="readFour">
+                                + Stephen Grider on Udemy
+                            </button>
+                        </div>
+                        <div id="readFour" class="collapse" aria-labelledby="readHeadFour" data-parent="#read">
+                            <div class="card-body">
+                                <p>Even before I was gifted Stephen Grider's <a href="https://www.udemy.com/user/sgslo/">Modern React with Redux</a> Udemy course I had heard of him as a really great teacher. He has 23 courses on Udemy to choose from and I don't think a single one is rated below 4 stars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--
             <div class="pics">
@@ -39,5 +129,15 @@
             </div>
             -->
         </div>
+        <!--
+        <div class="footer">
+            <p>"I too walk'd the streets of Manhattan"</p>
+        </div>
+        -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
     </body>
 </html>
