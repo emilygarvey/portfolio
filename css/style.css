@@ -31,3 +31,6 @@ h2 {
     word-wrap: break-word !important;
     white-space: normal;
 }
+a {
+    text-decoration: none;
+}
